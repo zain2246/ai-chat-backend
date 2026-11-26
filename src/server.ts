@@ -1,11 +1,11 @@
 import "dotenv/config";
 
 import { createServer } from "node:http";
-import app from "./app";
+import app from "./app.js";
 import { Server } from "socket.io";
-import { generateGeminiResponse, streamGeminiResponse } from "./gemini";
+import { generateGeminiResponse, streamGeminiResponse } from "./gemini.js";
 
-const port = Number(process.env.PORT);
+const port = Number(process.env.PORT) || 3000;
 
 const server = createServer(app);
 

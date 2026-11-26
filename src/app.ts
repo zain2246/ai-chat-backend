@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 
-import healthRoutes from "./routes/health.routes";
-import chatRoutes from "./routes/chat.routes"
+import healthRoutes from "./routes/health.routes.js";
+import chatRoutes from "./routes/chat.routes.js"
 
 
 const app = express();
